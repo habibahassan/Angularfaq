@@ -1,0 +1,24 @@
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <form (ngSubmit)='registerUser()'  #registerForm='ngForm' class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+
+    <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username" #name='ngModel' [(ngModel)]="newUser.username" required="" autofocus="">
+    <br>
+    <br>
+
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email" name="email" #name='ngModel' [(ngModel)]="newUser.email" required="" autofocus="">
+    <br>
+    <br>
+
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" #name='ngModel' [(ngModel)]="newUser.password" required="">
+    <br>
+    <br>
+
+    <button class="btn  btn-primary btn-block" type="submit" style="background-color: black;"><font style="color: white;">Sign Up</font></button>
+  </form>
+</div>
+
+
